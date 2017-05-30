@@ -1,0 +1,4 @@
+{
+  "dbUri": "postgres://lbapedmrglwvbq:83d6d27814f4241b7fb9685e5ea8a3cf105fea61bce169f1a41aff2538374af8@ec2-50-19-219-69.compute-1.amazonaws.com:5432/d2j8ll5dbtaj0s",
+  "jwtSecret": "a secret phrase!!"
+}
