@@ -30,6 +30,9 @@ app.use(passport.initialize());
 // load passport strategies
 const localSignupStrategy = require('./server/passport/local-signup');
 const localLoginStrategy = require('./server/passport/local-login');
+
+const loca = require('./server/passport/index');
+passport.use('loca', loca);
 passport.use('local-signup', localSignupStrategy);
 passport.use('local-login', localLoginStrategy);
 
@@ -43,8 +46,8 @@ const apiRoutes = require('./server/routes/api');
 app.use('/auth', authRoutes);
 app.use('/api', apiRoutes);
 
-
+var port12 = process.env.port || 3000;
 // start the server
-app.listen(3000, () => {
+app.listen( port12 , () => {
   console.log('Server is running on http://localhost:3000 or http://127.0.0.1:3000');
 });
